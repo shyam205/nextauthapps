@@ -16,8 +16,8 @@ export default function Home() {
         <div>
         { !session && (
               <>
-                  Not signed in <br />
-                  <button onClick={() => signIn()}>Sign in</button>
+                  <p className={styles.notsignin}>Not signed in</p>
+                  <button className={styles.button} onClick={() => signIn()}>Sign in</button>
               </>
             )
               
